@@ -1,12 +1,12 @@
-name: Post welcome comment
+name: Simple Workflow
+
 on:
   pull_request:
     types: [opened]
-permissions:
-  pull-requests: write
+
 jobs:
-  welcome:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Post a welcome comment
-        run: echo "Welcome to GitHub Actions!"
+      - name: Test echo command
+        run: echo "This is a test"
