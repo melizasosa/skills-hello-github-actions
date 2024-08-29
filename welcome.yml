@@ -1,0 +1,12 @@
+name: Simple Workflow
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test echo command
+        run: echo "This is a test"
